@@ -51,7 +51,7 @@ object SainteLague:
 
     val prog =
       for
-        _      <- List(s"Initial devisor = votes / seats = ${sumVotes} / ${seats} = ${initDiv}").tell
+        _      <- List(s"Initial divisor = votes / seats = ${sumVotes} / ${seats} = ${initDiv}").tell
         _      <- List(
                     s"Initial allotment: ${parties.map(p => s"${p.name}: ${initialAllotment(p.id)}").mkString(", ")}"
                   ).tell
