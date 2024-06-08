@@ -12,6 +12,7 @@ import org.felher.beminar.Bem
   render(
     dom.document.getElementsByTagName("body")(0),
     div(
+      bem,
       Panel
         .render(
           "General",
