@@ -1,8 +1,22 @@
-## sbt project compiled with Scala 3
+## Sainte-Laguë
 
-### Usage
+Hi there, this is a small program to calculate the allotment of resources
+using the Sainte-Laguë method. It is used, among other countries of course,
+by Germany to assign seats for their parliament or the parliament of the
+European Union.
 
-This is a normal sbt project. You can compile code with `sbt compile`, run it with `sbt run`, and `sbt console` will start a Scala 3 REPL.
+You can build it yourself doing
+```
+npm install
+npm run dev
+```
+and in another terminal
+```
+sbt
+~fastLinkJS
+```
 
-For more information on the sbt-dotty plugin, see the
-[scala3-example-project](https://github.com/scala/scala3-example-project/blob/main/README.md).
+You can also find it [here](https://sainte-lague.sabix2.sabix.eu)
+
+It is build with [Scala](https://www.scala-lang.org/) and
+[Laminar](https://laminar.dev), so go check them out.
