@@ -59,7 +59,7 @@ object State:
   def empty(): State = State(
     seats = 100,
     parties = List(
-       Party(
+      Party(
         id = PartyId.random(),
         name = "Party 1",
         votes = 100,

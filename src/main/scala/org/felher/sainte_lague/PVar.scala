@@ -30,4 +30,3 @@ object PVar:
     v.signal.foreach(value => window.localStorage.setItem(key, enc(value).noSpaces))(owner)
 
     v
-
