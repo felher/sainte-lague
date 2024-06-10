@@ -16,7 +16,7 @@ lazy val root = project
         .withModuleSplitStyle(ModuleSplitStyle.SmallModulesFor(List("org.felher.sainte_lague")))
     },
     libraryDependencies ++= Seq(
-      "org.scala-js"  %%% "scalajs-dom"               % "2.4.0",
+      "org.scala-js"  %%% "scalajs-dom"               % "2.8.0",
       "org.felher"    %%% "beminar"                   % "1.0.0",
       "io.circe"      %%% "circe-core"                % "0.14.7",
       "com.raquo"     %%% "laminar"                   % "17.0.0",
