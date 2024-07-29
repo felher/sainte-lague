@@ -96,10 +96,11 @@ object Allotment:
     private def numWholeDigits(d: Double): Int =
       String.format("%f", d).indexOf('.')
 
-    private val maxAllottedDigits = state.parties.map(_.allotted).map(numDigits).maxOption.getOrElse(1)
-    private val maxIdealWholeDigits    = state.parties.map(_.ideal).map(numWholeDigits).maxOption.getOrElse(1)
-    private val maxNameLetters    = state.parties.map(_.name.length).maxOption.getOrElse(1)
+    private val maxAllottedDigits   = state.parties.map(_.allotted).map(numDigits).maxOption.getOrElse(1)
+    private val maxIdealWholeDigits = state.parties.map(_.ideal).map(numWholeDigits).maxOption.getOrElse(1)
+    private val maxNameLetters      = state.parties.map(_.name.length).maxOption.getOrElse(1)
 
     def format(p: Party): String =
       println(s"%${maxNameLetters}s: %${maxAllottedDigits}d (% ${maxIdealWholeDigits + 3}.2f)")
-      s"%${maxNameLetters}s: %${maxAllottedDigits}d (%${maxIdealWholeDigits + 3}.2f)".format(p.name, p.allotted, p.ideal)
+      s"%${maxNameLetters}s: %${maxAllottedDigits}d (%${maxIdealWholeDigits + 3}.2f)"
+        .format(p.name, p.allotted, p.ideal)
