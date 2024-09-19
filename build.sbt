@@ -1,6 +1,6 @@
 import org.scalajs.linker.interface.ModuleSplitStyle
 
-val scala3Version = "3.4.2"
+val scala3Version = "3.4.3"
 
 lazy val root = project
   .in(file("."))
@@ -16,12 +16,12 @@ lazy val root = project
         .withModuleSplitStyle(ModuleSplitStyle.SmallModulesFor(List("org.felher.sainte_lague")))
     },
     libraryDependencies ++= Seq(
-      "org.scala-js"  %%% "scalajs-dom"               % "2.4.0",
+      "org.scala-js"  %%% "scalajs-dom"               % "2.8.0",
       "org.felher"    %%% "beminar"                   % "1.0.0",
       "io.circe"      %%% "circe-core"                % "0.14.10",
-      "com.raquo"     %%% "laminar"                   % "17.0.0",
-      "io.circe"      %%% "circe-generic"             % "0.14.10",
-      "io.circe"      %%% "circe-parser"              % "0.14.10",
+      "com.raquo"     %%% "laminar"                   % "17.1.0",
+      "io.circe"      %%% "circe-generic"             % "0.14.7",
+      "io.circe"      %%% "circe-parser"              % "0.14.7",
       ("org.scala-js" %%% "scalajs-java-securerandom" % "1.0.0").cross(CrossVersion.for3Use2_13)
     )
   )
