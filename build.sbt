@@ -1,6 +1,6 @@
 import org.scalajs.linker.interface.ModuleSplitStyle
 
-val scala3Version = "3.4.3"
+val scala3Version = "3.5.1"
 
 lazy val root = project
   .in(file("."))
