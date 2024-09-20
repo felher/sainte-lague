@@ -20,8 +20,8 @@ lazy val root = project
       "org.felher"    %%% "beminar"                   % "1.0.0",
       "io.circe"      %%% "circe-core"                % "0.14.10",
       "com.raquo"     %%% "laminar"                   % "17.1.0",
-      "io.circe"      %%% "circe-generic"             % "0.14.7",
-      "io.circe"      %%% "circe-parser"              % "0.14.7",
+      "io.circe"      %%% "circe-generic"             % "0.14.10",
+      "io.circe"      %%% "circe-parser"              % "0.14.10",
       ("org.scala-js" %%% "scalajs-java-securerandom" % "1.0.0").cross(CrossVersion.for3Use2_13)
     )
   )
